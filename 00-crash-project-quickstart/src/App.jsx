@@ -1,16 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+
+// import 
+
+import { useState } from "react";
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count , setCounter] = useState(0);
+   
 
   return (
     <>
-      <h1>Hello React</h1>
+      <p>count : {count}</p>
+      <button onClick={()=> setCounter(count+1)}>Click me </button>
+      
+
+
+
     </>
   )
 }
 
-export default App
+
+
+
+
+export default App  ;
