@@ -1,11 +1,4 @@
-
-
-// import 
-
 import { useState } from "react";
-
-
-
 
 function App() {
   const [count , setCounter] = useState(0);

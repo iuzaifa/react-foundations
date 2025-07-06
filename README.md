@@ -35,8 +35,165 @@ A professional repository to learn and practice React.js from scratch, covering 
 #### **Legacy APIs**
 
 * [Legacy React APIs](#legacy-react-apis)
+<br>
+<br>
+<br>
+---
+
+Here is the **step-by-step guide to create the latest React app (as of 2025)** using modern tools like **Vite** (faster and more lightweight than `create-react-app`):
 
 ---
+
+## 1. Prerequisites
+
+Make sure you have:
+
+* **Node.js** (version 18 or later)
+* **npm** or **yarn**
+
+Check by running:
+
+```bash
+node -v
+npm -v
+```
+
+If not installed, download from: [https://nodejs.org/](https://nodejs.org/)
+
+---
+
+## 2. Create a New React Project Using Vite
+
+### Step-by-Step (with npm):
+
+###  Step 1: Open Terminal / Command Prompt
+
+Navigate to the folder where you want to create the app.
+
+```bash
+cd path/to/your/folder
+```
+
+---
+
+### Step 2: Create React App with Vite
+
+```bash
+npm create vite@latest my-react-app
+```
+
+* `my-react-app` is your project name. You can change it.
+* Vite will ask:
+
+  * **Framework?** → Choose: `React`
+  * **Variant?** → Choose: `JavaScript` or `TypeScript` (choose JS if unsure)
+
+---
+
+### Step 3: Move into Project Folder
+
+```bash
+cd my-react-app
+```
+
+---
+
+### Step 4: Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### Step 5: Run the Development Server
+
+```bash
+npm run dev
+```
+
+* Open browser and go to: `http://localhost:5173`
+
+---
+
+##  3. Folder Structure (Vite React App)
+
+```
+my-react-app/
+├─ public/
+├─ src/
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ .gitignore
+├─ index.html
+├─ package.json
+├─ vite.config.js
+```
+
+---
+
+##  4. Create Your First Component
+
+Inside `src/`, create a file:
+
+```jsx
+// src/components/Hello.jsx
+function Hello() {
+  return <h2>Hello from Component!</h2>;
+}
+export default Hello;
+```
+
+Then use it in `App.jsx`:
+
+```jsx
+import Hello from './components/Hello';
+
+function App() {
+  return (
+    <>
+      <h1>Welcome to React</h1>
+      <Hello />
+    </>
+  );
+}
+
+export default App;
+```
+
+---
+
+##  5. Build for Production (optional)
+
+```bash
+npm run build
+```
+
+This will generate the final static files in the `dist/` folder.
+
+---
+
+##  6. Bonus: Install Tailwind CSS (Optional)
+
+If you want to use Tailwind CSS:
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+Then configure `tailwind.config.js` and `index.css`.
+
+---
+
+Let me know if you want to set it up using **create-react-app** instead of Vite, or if you want Tailwind + Router setup included.
+
+
+
+---
+
+
 
 
 ### Standard Folder Structure (Best Practice)
