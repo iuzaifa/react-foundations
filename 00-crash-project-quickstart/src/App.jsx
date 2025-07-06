@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Todo from './Todo.jsx'; 
+
+import './assets/css/Style.css';
 
 function App() {
   const [count , setCounter] = useState(0);
@@ -6,10 +9,10 @@ function App() {
 
   return (
     <>
-      <p>count : {count}</p>
-      <button onClick={()=> setCounter(count+1)}>Click me </button>
-      
+      {/* <p>count : {count}</p>
+      <button onClick={()=> setCounter(count+1)}>Click me </button> */}
 
+        <Todo/>
 
 
     </>

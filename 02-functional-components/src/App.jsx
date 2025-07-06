@@ -2,11 +2,18 @@
 // compoonet
 function App() {
 
+  const name = "Abu Huzafia"
+  const x = 12, y = 13;
+
   return (
     <>
       <Apple/>
       <Orange/>
       <h1>Sum is : {sum()}</h1>
+      <h5>{name}</h5>
+      <p className="pee">{x * y }</p>
+      <button onClick={()=>alert(`Hello`)}>Click</button>
+
       
 
 
