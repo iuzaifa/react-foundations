@@ -4,3 +4,12 @@
     width: auto;
     border: 3 px solid greenyellow;
 }
+
+.name{
+    background-color: #242424;
+    color: darkgrey;
+    text-align: center;
+    height: 100px;
+    padding-top: 50px;
+}
+

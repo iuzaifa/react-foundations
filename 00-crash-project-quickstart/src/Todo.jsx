@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
   
 const Todo = () => {
 
@@ -19,15 +19,25 @@ const Todo = () => {
         }else {
             return a * b == a*b;
         }
-
-        
-
-
     }
+
+
+    let func = "Apple";
+    const handleFunc =()=> {
+        func = "banana";
+        console.log(func);
+    }
+
+    const [ fruit , setfruit] = useState("Apple");
+    const changeFruit =()=>{
+         setfruit("Banana");
+         console.log(setfruit);
+    }
+
   return (
     <>
         <h1>{name?name:"user not found"}</h1>
-        <img className='images' src={path} alt="image" />
+        {/* <img className='images' src={path} alt="image" /> */}
         <ul>
             <li>Lorem, ipsum dolor.</li>
             <li>Lorem, ipsum dolor.</li>
@@ -38,6 +48,11 @@ const Todo = () => {
         <h2>{operation(24, 12, "+")}</h2>
         <p>{userName[3]}</p> 
         <button onClick={()=>alert("Hello JSX Coder")}>Click Me</button>  <hr />
+
+        <h1>Furite : {fruit}</h1>
+
+        <button onClick={changeFruit}>Click Here </button>
+        
 
 
 
