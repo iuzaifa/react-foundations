@@ -13,3 +13,41 @@
     padding-top: 50px;
 }
 
+.toggleL{
+    width: 90%;
+    text-align: center;
+    color: rebeccapurple;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.red{
+    color : red;
+}
+
+.counter5{
+    background-color: #242424 ;
+    color: orange;
+}
+
+.counter4{
+    background-color: #d1a0a0 ;
+    color: rgb(16, 16, 16);
+}
+
+.counter3{
+    background-color: orange ;
+    color: black;
+}
+
+.counter2 {
+    background-color: blueviolet;
+    color: #242424;
+    border-bottom: 10px solid gray;
+}
+
+.counter1 {
+    background-color: greenyellow;
+    color: #242424;
+}
