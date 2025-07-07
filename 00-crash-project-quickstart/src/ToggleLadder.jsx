@@ -17,7 +17,7 @@ const ToggleLadder=()=>{
                 :count == 3 ? <h2 className="counter3">Counter {count}</h2>
                 :count == 4 ? <h2 className="counter4">Counter {count}</h2>
                 :count == 5 ? <h2 className="counter5">Counter {count}</h2>
-                :<h2 className="red">"not dount counter"</h2>
+                :<h2 className="red">"not Count counter"</h2>
             }
 
         </>
