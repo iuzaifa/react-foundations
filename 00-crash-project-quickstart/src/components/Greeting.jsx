@@ -7,7 +7,15 @@ const Greeting = (props) => {
         <p>Age :{props.data.age}</p>
         <p>Address :{props.data.address}</p>
 
+          <h1>Hello Main </h1>
+          <head></head>   l
+
+
+
+        hello
+
     </div>
+
   )
 }
 
